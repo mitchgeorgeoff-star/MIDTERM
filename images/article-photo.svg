@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
+  <title id="title">Jazz musician on a city street</title>
+  <desc id="desc">A simple illustration of a musician playing beside a glowing sign.</desc>
+  <rect width="600" height="400" fill="#1f2430"/>
+  <rect y="290" width="600" height="110" fill="#2d3546"/>
+  <rect x="80" y="95" width="200" height="120" rx="12" fill="#6b3e2e"/>
+  <rect x="100" y="115" width="160" height="80" rx="8" fill="#d89b4c"/>
+  <rect x="330" y="120" width="160" height="120" rx="12" fill="#ffffff" opacity="0.9"/>
+  <text x="360" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#1f2430">Live Jazz</text>
+  <circle cx="260" cy="220" r="55" fill="#f9d59b"/>
+  <rect x="220" y="220" width="80" height="110" rx="16" fill="#4b2b23"/>
+  <rect x="230" y="235" width="20" height="55" rx="8" fill="#f6c27f"/>
+  <rect x="260" y="235" width="20" height="55" rx="8" fill="#f6c27f"/>
+  <rect x="290" y="235" width="20" height="55" rx="8" fill="#f6c27f"/>
+  <rect x="235" y="300" width="60" height="20" rx="8" fill="#2e2a2a"/>
+  <rect x="375" y="230" width="30" height="90" rx="8" fill="#3f4f5f"/>
+  <rect x="420" y="230" width="30" height="90" rx="8" fill="#3f4f5f"/>
+</svg>
