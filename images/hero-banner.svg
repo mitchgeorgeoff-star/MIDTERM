@@ -13,7 +13,7 @@
     <circle cx="760" cy="120" r="3" fill="#ffffff"/>
     <circle cx="840" cy="90" r="2.2" fill="#ffffff"/>
   </g>
-  <path d="M0 430 C140 395 250 360 370 385 C470 406 575 455 690 450 C825 444 930 375 1200 318 L1200 700 L0 700 Z" fill="#17283b"/>
+  <rect x="0" y="430" width="1200" height="270" fill="#17283b"/>
   <g fill="#1d2c3d">
     <rect x="70" y="285" width="95" height="250" rx="4"/>
     <rect x="200" y="238" width="115" height="297" rx="4"/>

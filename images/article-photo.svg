@@ -26,7 +26,7 @@
   <rect x="120" y="280" width="120" height="65" rx="4" fill="#4b5d74"/>
   <rect x="360" y="270" width="140" height="80" rx="4" fill="#415368"/>
   <rect x="0" y="320" width="600" height="80" fill="#141b25"/>
-  <path d="M0 330 C110 305 180 300 260 320 C340 340 430 350 600 315" stroke="#f2ca73" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <rect x="0" y="325" width="600" height="3" fill="#f2ca73" opacity="0.65"/>
   <g fill="#f8d58d">
     <rect x="120" y="310" width="4" height="50"/>
     <rect x="190" y="310" width="4" height="50"/>
