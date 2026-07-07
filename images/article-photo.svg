@@ -1,18 +1,42 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-labelledby="title desc">
-  <title id="title">Jazz musician on a city street</title>
-  <desc id="desc">A simple illustration of a musician playing beside a glowing sign.</desc>
-  <rect width="600" height="400" fill="#1f2430"/>
-  <rect y="290" width="600" height="110" fill="#2d3546"/>
-  <rect x="80" y="95" width="200" height="120" rx="12" fill="#6b3e2e"/>
-  <rect x="100" y="115" width="160" height="80" rx="8" fill="#d89b4c"/>
-  <rect x="330" y="120" width="160" height="120" rx="12" fill="#ffffff" opacity="0.9"/>
-  <text x="360" y="180" text-anchor="middle" font-family="Georgia, serif" font-size="26" fill="#1f2430">Live Jazz</text>
-  <circle cx="260" cy="220" r="55" fill="#f9d59b"/>
-  <rect x="220" y="220" width="80" height="110" rx="16" fill="#4b2b23"/>
-  <rect x="230" y="235" width="20" height="55" rx="8" fill="#f6c27f"/>
-  <rect x="260" y="235" width="20" height="55" rx="8" fill="#f6c27f"/>
-  <rect x="290" y="235" width="20" height="55" rx="8" fill="#f6c27f"/>
-  <rect x="235" y="300" width="60" height="20" rx="8" fill="#2e2a2a"/>
-  <rect x="375" y="230" width="30" height="90" rx="8" fill="#3f4f5f"/>
-  <rect x="420" y="230" width="30" height="90" rx="8" fill="#3f4f5f"/>
+  <title id="title">City street at night</title>
+  <desc id="desc">A realistic city street scene with apartment buildings, streetlights and glowing storefronts.</desc>
+  <rect width="600" height="400" fill="#121a27"/>
+  <rect y="0" width="600" height="250" fill="url(#sky)"/>
+  <rect x="0" y="250" width="600" height="150" fill="#1f2a38"/>
+  <rect x="40" y="140" width="140" height="180" rx="4" fill="#233043"/>
+  <rect x="210" y="110" width="160" height="210" rx="4" fill="#2a3b50"/>
+  <rect x="395" y="145" width="135" height="175" rx="4" fill="#273549"/>
+  <g fill="#f2c36d">
+    <rect x="70" y="175" width="18" height="14" rx="2"/>
+    <rect x="98" y="175" width="18" height="14" rx="2"/>
+    <rect x="126" y="175" width="18" height="14" rx="2"/>
+    <rect x="240" y="145" width="18" height="14" rx="2"/>
+    <rect x="268" y="145" width="18" height="14" rx="2"/>
+    <rect x="296" y="145" width="18" height="14" rx="2"/>
+    <rect x="424" y="180" width="18" height="14" rx="2"/>
+    <rect x="452" y="180" width="18" height="14" rx="2"/>
+    <rect x="480" y="180" width="18" height="14" rx="2"/>
+  </g>
+  <g fill="#f4b24f" opacity="0.86">
+    <rect x="80" y="205" width="20" height="14" rx="2"/>
+    <rect x="250" y="175" width="20" height="14" rx="2"/>
+    <rect x="434" y="210" width="20" height="14" rx="2"/>
+  </g>
+  <rect x="120" y="280" width="120" height="65" rx="4" fill="#4b5d74"/>
+  <rect x="360" y="270" width="140" height="80" rx="4" fill="#415368"/>
+  <rect x="0" y="320" width="600" height="80" fill="#141b25"/>
+  <path d="M0 330 C110 305 180 300 260 320 C340 340 430 350 600 315" stroke="#f2ca73" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+  <g fill="#f8d58d">
+    <rect x="120" y="310" width="4" height="50"/>
+    <rect x="190" y="310" width="4" height="50"/>
+    <rect x="390" y="300" width="4" height="50"/>
+    <rect x="470" y="300" width="4" height="50"/>
+  </g>
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#24354d"/>
+      <stop offset="100%" stop-color="#7a4654"/>
+    </linearGradient>
+  </defs>
 </svg>
