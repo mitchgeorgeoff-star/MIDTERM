@@ -1,4 +1,4 @@
-/* CSS reset placed at the top so the page begins from a consistent baseline */
+/* CSS reset: this removes the browser's built-in spacing so the layout starts evenly. */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,6 +6,7 @@
 }
 
 :root {
+  /* Custom properties let us reuse colours throughout the stylesheet without repeating values. */
   --bg: #f4efe9;
   --text: #1f2326;
   --accent: #8d5a3b;
@@ -15,6 +16,7 @@
 }
 
 body {
+  /* This sets the page font and background colour for the whole website. */
   font-family: Georgia, "Times New Roman", serif;
   background: linear-gradient(135deg, #f7efe7 0%, var(--bg) 100%);
   color: var(--text);
@@ -22,11 +24,12 @@ body {
 }
 
 img {
+  /* Images should behave predictably and fill their container without extra inline spacing. */
   display: block;
   width: 100%;
 }
 
-/* The hero area creates a strong visual introduction and keeps the title layered over the image */
+/* Hero section: this creates a large banner area with the title placed over the image. */
 .hero {
   position: relative;
   max-width: 1100px;
@@ -37,11 +40,13 @@ img {
 }
 
 .hero img {
+  /* This keeps the hero image the same height and crops it nicely instead of stretching it. */
   height: 420px;
   object-fit: cover;
 }
 
 .hero-overlay {
+  /* The overlay sits on top of the hero image and makes the title easier to read. */
   position: absolute;
   inset: 0;
   display: flex;
@@ -72,6 +77,7 @@ img {
 }
 
 .page {
+  /* The main content area is centered and given a maximum width so it does not stretch too wide. */
   max-width: 1100px;
   margin: 2rem auto 3rem;
   display: grid;
@@ -82,6 +88,7 @@ img {
 .story,
 .facts,
 .contact {
+  /* These sections are styled as cards with a white background, rounded corners, and a light shadow. */
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 18px;
@@ -96,7 +103,7 @@ img {
   color: var(--accent-dark);
 }
 
-/* The article image floats left so the paragraph text wraps around it, matching the mockup style */
+/* Article image: floating it left lets the paragraph text wrap around it like a magazine layout. */
 .story img {
   float: left;
   width: 280px;
@@ -112,6 +119,7 @@ img {
 }
 
 .facts ul {
+  /* This adds indentation so the list is easier to read and looks more polished. */
   padding-left: 1.2rem;
 }
 
@@ -120,6 +128,7 @@ img {
 }
 
 .form-group {
+  /* Form rows are stacked vertically so each label appears above its input. */
   display: flex;
   flex-direction: column;
   margin-bottom: 1rem;
@@ -132,6 +141,7 @@ label {
 
 input,
 textarea {
+  /* These styles make form controls look neat and consistent with the rest of the design. */
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 0.75rem;
@@ -140,6 +150,7 @@ textarea {
 }
 
 button {
+  /* The button is given a warm gradient and rounded shape to feel more like a call-to-action. */
   border: none;
   background: linear-gradient(135deg, var(--accent), var(--accent-dark));
   color: #fff;
@@ -151,10 +162,12 @@ button {
 }
 
 button:hover {
+  /* Hover feedback gives the button a small lift so it feels interactive. */
   transform: translateY(-1px);
   box-shadow: 0 8px 18px rgba(77, 47, 28, 0.2);
 }
 
+/* Responsive design: this makes the layout adapt nicely on smaller screens. */
 @media (max-width: 700px) {
   .hero img {
     height: 320px;
