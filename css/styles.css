@@ -103,6 +103,7 @@ img {
   height: 220px;
   object-fit: cover;
   width: 100%;
+  filter: contrast(1.02) saturate(0.95) brightness(0.98) sepia(0.02);
 }
 
 .hero-overlay {
@@ -204,12 +205,12 @@ img {
 .story p {
   margin-bottom: 1rem;
   font-size: 1.02rem;
-  width: 160px;
-  height: 140px;
+  line-height: 1.5;
+}
+
 .facts ul {
   /* This adds indentation so the list is easier to read and looks more polished. */
   padding-left: 1.2rem;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
 .facts li + li {
@@ -332,7 +333,7 @@ button:hover {
 .panel .hero img { width:100%; height:240px; object-fit:cover; }
 
 /* Nav band sits directly under hero like the mockup */
-.panel .site-nav { background: rgba(255,255,255,0.85); margin-top: -6px; padding: 0.6rem 0; }
+.panel .site-nav { background: rgba(255,255,255,0.85); margin-top: 0; padding: 0.6rem 0; }
 .panel .site-nav ul { align-items:center; }
 .panel .site-nav li { padding: 0 1rem; }
 .panel .site-nav li + li { border-left: 1px solid rgba(0,0,0,0.08); margin-left: 1rem; padding-left: 1rem; }
@@ -345,6 +346,31 @@ button:hover {
 
 /* Float image a bit closer to the heading like the mockup */
 .story img { width: 140px; height: 140px; margin: 0 1rem 1rem 0; }
+
+/* Final fixes: ensure hero and nav don't overlap and text scales nicely */
+.panel { max-width: 760px; width: calc(100% - 40px); }
+.panel .hero { border-radius: 6px 6px 0 0; overflow: hidden; }
+.panel .site-nav { border-top: 1px solid rgba(0,0,0,0.04); }
+.hero-overlay { padding: 1.6rem 1.2rem; }
+.hero-overlay h1 { margin: 0.1rem 0 0.4rem; font-size: 2.2rem; line-height: 1.05; }
+
+/* Grain overlay to add gritty sand texture without editing the photo file */
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(0,0,0,0.03) 0.5px, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 4px 4px;
+  mix-blend-mode: overlay;
+  opacity: 0.55;
+}
+
+@media (max-width: 820px) {
+  .panel { width: calc(100% - 24px); }
+  .hero-overlay h1 { font-size: 1.8rem; }
+  .site-nav ul { gap: 0.6rem; }
+}
 
 /* small helpers */
 .radio-row { display:flex; gap:1rem; align-items:center; }
