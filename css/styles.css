@@ -22,6 +22,38 @@ body {
   color: var(--text);
   line-height: 1.6;
 }
+/*
+  Notes from me — plain language:
+  - I put a small reset at the top so browsers don't add weird spacing.
+  - I use "variables" (the --names) so changing the main colour is easy.
+  - Layout choices (widths, floats) follow the mockup: banner, nav, story with a floated image.
+
+  If something looks off, change the number and refresh — it's just CSS.
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Main colour you asked for */
+  --primary: #aad4cf;
+  --text: #1f2326;
+  --accent: #8d5a3b;
+  --accent-dark: #4c2e1c;
+  --panel: #ffffff;
+  --border: #d8c9b8;
+}
+
+body {
+  /* Page font + background. Using your primary colour as the page background. */
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--primary);
+  color: var(--text);
+  line-height: 1.6;
+}
 
 img {
   /* Images should behave predictably and fill their container without extra inline spacing. */
@@ -54,6 +86,35 @@ img {
   justify-content: flex-end;
   padding: 2rem;
   background: linear-gradient(to top, rgba(7, 10, 15, 0.78), rgba(7, 10, 15, 0.12));
+  color: #fff;
+}
+.hero {
+  position: relative;
+  max-width: 760px;
+  margin: 2rem auto 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.hero img {
+  /* Keep the banner looking like a photo: fixed height and crop when needed */
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.hero-overlay {
+  /* Center the title over the image like the mockup */
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(7, 10, 15, 0.58), rgba(7, 10, 15, 0.08));
   color: #fff;
 }
 
@@ -95,6 +156,14 @@ img {
   padding: 1.6rem;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
 }
+.page {
+  /* The white content area sits centered on the coloured background */
+  max-width: 760px;
+  margin: 0.8rem auto 3rem;
+  display: grid;
+  gap: 1.25rem;
+  padding: 0 1rem;
+}
 
 .story h2,
 .facts h2,
@@ -111,6 +180,15 @@ img {
   object-fit: cover;
   margin: 0 1.25rem 1rem 0;
   border-radius: 12px;
+}
+.story,
+.facts,
+.contact {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
 }
 
 .story p {
@@ -179,4 +257,37 @@ button:hover {
     height: 220px;
     margin: 0 0 1rem 0;
   }
+  .hero img {
+    height: 200px;
+  }
+
+  .story img {
+    float: none;
+    width: 100%;
+    height: auto;
+    margin: 0 0 1rem 0;
+  }
 }
+
+/* Navigation styles (simple horizontal list) */
+.site-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  padding: 0.5rem 0 1rem 0;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.site-nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  letter-spacing: 0.05em;
+}
+
+.site-nav li + li { border-left: 1px solid rgba(0,0,0,0.08); padding-left: 1rem; }
+
+/* small helpers */
+.radio-row { display:flex; gap:1rem; align-items:center; }

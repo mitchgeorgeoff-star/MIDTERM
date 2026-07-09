@@ -3,75 +3,93 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Midnight in the City</title>
+    <title>Lone Starfish</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- The hero section uses a full-width image and places the page title directly over it -->
-    <header class="hero">
-      <img src="images/hero-banner.svg" alt="A polished city skyline at night with glowing windows and a moonlit atmosphere" />
+    <!-- Header: banner image with the site title overlaid. Title and nav match the assignment requirements. -->
+    <header class="hero" id="home">
+      <img src="images/hero-starfish.svg" alt="A polished starfish on sand, hero banner" />
       <div class="hero-overlay">
-        <p class="eyebrow">City Lights • Evening Edition</p>
-        <h1>Midnight in the City</h1>
-        <p class="hero-copy">
-          A cinematic portrait of the city after dark, where light, shadow, and quiet energy come together.
-        </p>
+        <p class="eyebrow">Lone Starfish</p>
+        <h1>Lone Starfish</h1>
+        <p class="hero-copy">A simple, calm portrait of a starfish on the shore — quiet and a little mysterious.</p>
       </div>
     </header>
 
+    <!-- Simple navigation that links to page sections. Kept plain to match the prototype. -->
+    <nav class="site-nav" aria-label="Main Navigation">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#story">STORY</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
     <main class="page">
       <!-- The article section uses a floated image so the surrounding text wraps naturally -->
-      <article class="story">
-        <h2>Where the City Softens at Dusk</h2>
-        <img src="images/article-photo.svg" alt="A refined city street scene at night with warm windows, streetlights, and a calm atmosphere" />
+      <article class="story" id="story">
+        <!-- Article header and floating image so text wraps around it per assignment requirement -->
+        <h2>Life of a Starfish</h2>
+        <img src="images/article-starfish.svg" alt="Starfish on sand" />
         <p>
-          As daylight fades, the city begins to shift into a quieter, more intimate mood. Glass towers
-          glow with amber light, windows reflect the evening sky, and every corner feels wrapped in a
-          sense of motion and stillness at the same time.
-        </p>
-        <p>
-          This is the hour when the streets feel less rushed and more cinematic. The pace slows, the air
-          deepens, and the city reveals a side of itself that is thoughtful, dramatic, and beautifully alive.
-        </p>
-        <p>
-          It is a moment made for observation, for lingering just a little longer, and for noticing the
-          details that are often missed in daylight.
+          Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
+          catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
+          batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike
+          barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose
+          chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch
+          snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish
+          bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River
+          sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish.
+          Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow
+          weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead
+          catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish.
+          Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish.
+          Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake,
+          platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish
+          searobin false trevally, dottyback.
         </p>
       </article>
 
       <section class="facts" aria-labelledby="facts-title">
-        <h2 id="facts-title">Why This Scene Stands Out</h2>
+        <h2 id="facts-title">Facts About Starfish</h2>
+        <!-- Proper unordered list used for facts per assignment requirement -->
         <ul>
-          <li>Captured during the quiet glow of evening, when the city feels most atmospheric.</li>
-          <li>Built around contrast, texture, and soft light to create a polished visual mood.</li>
-          <li>Designed to feel cinematic, balanced, and memorable from the first glance.</li>
+          <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+          <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+          <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
+          <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
         </ul>
       </section>
 
-      <section class="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Request an Evening Visit</h2>
+      <section class="contact" aria-labelledby="contact-title" id="contact">
+        <h2 id="contact-title">Contact to learn more</h2>
         <form action="#" method="post">
           <div class="form-group">
-            <label for="name">Name</label>
+            <label for="name">Your Name</label>
             <input type="text" id="name" name="name" />
           </div>
 
           <div class="form-group">
-            <label for="email">Email</label>
+            <label for="email">Your Email</label>
             <input type="email" id="email" name="email" />
           </div>
 
           <div class="form-group">
-            <label for="date">Preferred Date</label>
-            <input type="date" id="date" name="date" />
-          </div>
-
-          <div class="form-group">
-            <label for="message">Notes</label>
+            <label for="message">Your Message</label>
             <textarea id="message" name="message" rows="4"></textarea>
           </div>
 
-          <button type="submit">Request Invitation</button>
+          <div class="form-group">
+            <label>Would you like to visit the starfish?</label>
+            <div class="radio-row">
+              <label><input type="radio" name="visit" value="yes" /> Yes</label>
+              <label><input type="radio" name="visit" value="no" /> No</label>
+              <label><input type="radio" name="visit" value="maybe" /> Maybe</label>
+            </div>
+          </div>
+
+          <button type="submit">Send</button>
         </form>
       </section>
     </main>
