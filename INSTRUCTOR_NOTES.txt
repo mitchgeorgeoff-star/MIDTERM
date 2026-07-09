@@ -1,0 +1,15 @@
+Lone Starfish — MIDTERM Submission
+
+Student: Mitch Georgeoff
+Project: Single-page website built to match provided prototype (header image with overlaid title, article with wrapped image, facts list, labeled inputs).
+
+How to view:
+- Open `index.html` in a browser locally
+- Or visit the GitHub Pages URL: https://mitchgeorgeoff-star.github.io/MIDTERM/
+
+Notes for the instructor:
+- This is a static HTML/CSS site with no JavaScript.
+- Key requirements implemented: header hero with overlaid title and eyebrow, article with floated image that wraps text, unordered facts list, form labels linked to inputs, CSS reset, and explanatory comments in the CSS and HTML.
+- File locations: `index.html`, styles in `css/styles.css`, images in `images/`.
+
+If you need any changes or a zip of the project, please contact the student.
