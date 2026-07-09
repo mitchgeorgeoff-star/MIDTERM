@@ -91,8 +91,8 @@ img {
 }
 .hero {
   position: relative;
-  max-width: 760px;
-  margin: 2rem auto 0;
+  max-width: 100%;
+  margin: 0 auto 0;
   overflow: hidden;
   border-radius: 8px;
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
@@ -319,6 +319,32 @@ button:hover {
 .site-nav li + li { border-left: 1px solid rgba(0,0,0,0.08); padding-left: 1rem; }
 
 .site-nav { background: rgba(255,255,255,0.72); border-bottom: 1px solid rgba(0,0,0,0.06); }
+
+/* Panel wrapping the whole content to match the mockup central column */
+.panel {
+  width: 760px;
+  margin: 18px auto 30px;
+  background: #d6eeea; /* pale inner panel */
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.panel .hero img { width:100%; height:240px; object-fit:cover; }
+
+/* Nav band sits directly under hero like the mockup */
+.panel .site-nav { background: rgba(255,255,255,0.85); margin-top: -6px; padding: 0.6rem 0; }
+.panel .site-nav ul { align-items:center; }
+.panel .site-nav li { padding: 0 1rem; }
+.panel .site-nav li + li { border-left: 1px solid rgba(0,0,0,0.08); margin-left: 1rem; padding-left: 1rem; }
+
+/* Main page content area inside the pale panel */
+.panel .page { background: #eaf7f4; padding: 18px; margin: 0; }
+
+/* Make the big form feel like the mockup's large box */
+.contact { border: 2px solid rgba(0,0,0,0.12); padding: 1rem; }
+
+/* Float image a bit closer to the heading like the mockup */
+.story img { width: 140px; height: 140px; margin: 0 1rem 1rem 0; }
 
 /* small helpers */
 .radio-row { display:flex; gap:1rem; align-items:center; }
