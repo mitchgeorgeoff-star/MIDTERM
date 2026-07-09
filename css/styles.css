@@ -52,7 +52,8 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   background: var(--primary);
   color: var(--text);
-  line-height: 1.6;
+  line-height: 1.55;
+  font-size: 16px; /* base size for readable body text */
 }
 
 img {
@@ -118,6 +119,13 @@ img {
   color: #fff;
 }
 
+.hero-overlay h1 {
+  font-size: 2.4rem;
+  margin: 0.2rem 0 0.6rem 0;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.3em;
@@ -170,6 +178,8 @@ img {
 .contact h2 {
   margin-bottom: 1rem;
   color: var(--accent-dark);
+  font-weight: 700;
+  font-size: 1.25rem;
 }
 
 /* Article image: floating it left lets the paragraph text wrap around it like a magazine layout. */
@@ -194,11 +204,12 @@ img {
 .story p {
   margin-bottom: 1rem;
   font-size: 1.02rem;
-}
-
+  width: 160px;
+  height: 140px;
 .facts ul {
   /* This adds indentation so the list is easier to read and looks more polished. */
   padding-left: 1.2rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
 .facts li + li {
@@ -227,6 +238,14 @@ textarea {
   background: #fcfaf7;
 }
 
+input:focus,
+textarea:focus,
+a:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(170,212,207,0.22);
+  border-color: var(--accent-dark);
+}
+
 button {
   /* The button is given a warm gradient and rounded shape to feel more like a call-to-action. */
   border: none;
@@ -243,6 +262,16 @@ button:hover {
   /* Hover feedback gives the button a small lift so it feels interactive. */
   transform: translateY(-1px);
   box-shadow: 0 8px 18px rgba(77, 47, 28, 0.2);
+}
+
+/* Footer */
+.site-footer {
+  max-width: 760px;
+  margin: 0.5rem auto 2rem;
+  padding: 0.5rem 1rem;
+  text-align: right;
+  font-size: 0.85rem;
+  color: rgba(0,0,0,0.6);
 }
 
 /* Responsive design: this makes the layout adapt nicely on smaller screens. */
@@ -288,6 +317,8 @@ button:hover {
 }
 
 .site-nav li + li { border-left: 1px solid rgba(0,0,0,0.08); padding-left: 1rem; }
+
+.site-nav { background: rgba(255,255,255,0.72); border-bottom: 1px solid rgba(0,0,0,0.06); }
 
 /* small helpers */
 .radio-row { display:flex; gap:1rem; align-items:center; }
