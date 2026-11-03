@@ -1,90 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- CC: Instructor — Simple notes: This single-page MIDTERM shows a hero image, article with wrapped image, facts list, and a contact form. See INSTRUCTOR_NOTES.txt for details. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lone Starfish</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Midterm Project</title>
+    <meta name="description" content="A responsive landing page created for the midterm project" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <div class="panel">
-    <!-- Header: banner image with the site title overlaid. Title and nav match the assignment requirements. -->
-    <header class="hero" id="home">
-      <img src="images/hero-starfish-photo.jpg" alt="A starfish on sandy shore, hero banner" />
-      <div class="hero-overlay">
-        <p class="eyebrow">Lone Starfish</p>
-        <h1>Lone Starfish</h1>
-        <p class="hero-copy">A simple, calm portrait of a starfish on the shore — quiet and a little mysterious.</p>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" id="home">
+      <div class="hero-wrap">
+        <img src="images/hero-banner.svg" alt="Waves rolling onto a rocky shore at sunrise" />
+        <div class="hero-overlay">
+          <p class="eyebrow">Northshore Journal</p>
+          <h1>Northshore Journal</h1>
+          <p class="hero-copy">A calmer kind of travel story built around pause, nature, and the places that slow time down.</p>
+        </div>
       </div>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#story">Story</a></li>
+          <li><a href="#highlights">Highlights</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- Simple navigation that links to page sections. Kept plain to match the prototype. -->
-    <nav class="site-nav" aria-label="Main Navigation">
-      <ul>
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#story">STORY</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-
-    <main class="page">
-      <!-- The article section uses a floated image so the surrounding text wraps naturally -->
+    <main id="main-content" class="page">
       <article class="story" id="story">
-        <!-- Article header and floating image so text wraps around it per assignment requirement -->
-        <h2>Life of a Starfish</h2>
-        <img src="images/hero-starfish-photo.jpg" alt="Starfish on sand" />
+        <h2>Finding stillness by the water</h2>
+        <img src="images/article-photo.svg" alt="A coastal trail beside the water and cliffs" />
         <p>
-          Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper
-          catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak
-          batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike
-          barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose
-          chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch
-          snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish
-          bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River
-          sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish.
-          Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow
-          weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead
-          catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish.
-          Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish.
-          Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake,
-          platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish
-          searobin false trevally, dottyback.
+          The coast always feels a little farther away than the map suggests. Between the cliffs and the tide, there is a rhythm
+          that invites slower steps, deeper breaths, and a different sense of time. In the early morning, the air is cool and the
+          horizon glows before the day decides what it wants to become.
+        </p>
+        <p>
+          Every path leads to some version of the same truth: the landscape is not simply something to move through, but something to
+          listen to. The sea keeps its own pace. The wind shapes the dunes. The light changes the mood of a place by the minute.
+          That sense of observation becomes its own kind of adventure.
+        </p>
+        <p>
+          By the time the sun lifts higher, the shore feels less like a destination and more like a return. It is a place to notice
+          details, collect small memories, and remember that calm is not the absence of motion. It is the art of moving with intention.
         </p>
       </article>
 
-      <section class="facts" aria-labelledby="facts-title">
-        <h2 id="facts-title">Facts About Starfish</h2>
-        <!-- Proper unordered list used for facts per assignment requirement -->
+      <section class="facts" id="highlights" aria-labelledby="facts-title">
+        <h2 id="facts-title">Highlights from the coast</h2>
         <ul>
-          <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-          <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
-          <li>Herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
-          <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
+          <li>Sunrise walks with cool air, quiet waves, and long shadows on the sand.</li>
+          <li>Rocky coves and layered cliffs that turn every viewpoint into a mini discovery.</li>
+          <li>Local cafes, harbor markets, and handwritten notes left in the morning light.</li>
+          <li>Slow travel that focuses on memory, texture, and the feeling of being fully present.</li>
         </ul>
       </section>
 
-      <section class="contact" aria-labelledby="contact-title" id="contact">
-        <h2 id="contact-title">Contact to learn more</h2>
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title">Plan your next escape</h2>
         <form action="#" method="post">
           <div class="form-group">
             <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" />
+            <input type="text" id="name" name="name" placeholder="Enter your name" />
           </div>
 
           <div class="form-group">
             <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" />
+            <input type="email" id="email" name="email" placeholder="name@example.com" />
           </div>
 
           <div class="form-group">
             <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="4"></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us what kind of trip you want..."></textarea>
           </div>
 
           <div class="form-group">
-            <label>Would you like to visit the starfish?</label>
-            <div class="radio-row">
+            <label>Would you visit this coast again?</label>
+            <div class="radio-row" role="radiogroup" aria-label="Would you visit this coast again?">
               <label><input type="radio" name="visit" value="yes" /> Yes</label>
               <label><input type="radio" name="visit" value="no" /> No</label>
               <label><input type="radio" name="visit" value="maybe" /> Maybe</label>
@@ -94,12 +93,10 @@
           <button type="submit">Send</button>
         </form>
       </section>
-      
-      <!-- Footer: small copyright area matching the mockup placement -->
+
       <footer class="site-footer" role="contentinfo">
-        &copy; Lone Starfish.
+        &copy; Northshore Journal 2026
       </footer>
     </main>
-    </div><!-- .panel -->
   </body>
 </html>
