@@ -4,99 +4,172 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Midterm Project</title>
-    <meta name="description" content="A responsive landing page created for the midterm project" />
+    <meta name="description" content="My Coffee House landing page for the midterm assignment" />
+
+    <!-- The layout uses Lato for headings and Karla for the rest of the content to match the brief. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
     <header class="site-header" id="home">
-      <div class="hero-wrap">
-        <img src="images/hero-banner.svg" alt="Waves rolling onto a rocky shore at sunrise" />
-        <div class="hero-overlay">
-          <p class="eyebrow">Northshore Journal</p>
-          <h1>Northshore Journal</h1>
-          <p class="hero-copy">A calmer kind of travel story built around pause, nature, and the places that slow time down.</p>
+      <div class="topbar">
+        <div class="brand-wrap">
+          <img class="brand-mark" src="images/my-coffee-shop-logo.svg" alt="My Coffee House logo" />
+          <span class="brand-name">My Coffee House</span>
         </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#locations">Locations</a></li>
+          </ul>
+        </nav>
       </div>
 
-      <nav class="site-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#story">Story</a></li>
-          <li><a href="#highlights">Highlights</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1 id="hero-title">Experience coffee like never before</h1>
+          <p>
+            We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.
+          </p>
+          <a class="button button-light" href="#menu">Explore our menu</a>
+        </div>
+      </section>
     </header>
 
-    <main id="main-content" class="page">
-      <article class="story" id="story">
-        <h2>Finding stillness by the water</h2>
-        <img src="images/article-photo.svg" alt="A coastal trail beside the water and cliffs" />
-        <p>
-          The coast always feels a little farther away than the map suggests. Between the cliffs and the tide, there is a rhythm
-          that invites slower steps, deeper breaths, and a different sense of time. In the early morning, the air is cool and the
-          horizon glows before the day decides what it wants to become.
-        </p>
-        <p>
-          Every path leads to some version of the same truth: the landscape is not simply something to move through, but something to
-          listen to. The sea keeps its own pace. The wind shapes the dunes. The light changes the mood of a place by the minute.
-          That sense of observation becomes its own kind of adventure.
-        </p>
-        <p>
-          By the time the sun lifts higher, the shore feels less like a destination and more like a return. It is a place to notice
-          details, collect small memories, and remember that calm is not the absence of motion. It is the art of moving with intention.
-        </p>
-      </article>
+    <main id="main-content">
+      <section class="welcome section-shell" id="about">
+        <div class="section-heading small-heading">
+          <p>Welcome to My Coffee House</p>
+        </div>
+        <h2>Experience a new way to taste coffee</h2>
 
-      <section class="facts" id="highlights" aria-labelledby="facts-title">
-        <h2 id="facts-title">Highlights from the coast</h2>
-        <ul>
-          <li>Sunrise walks with cool air, quiet waves, and long shadows on the sand.</li>
-          <li>Rocky coves and layered cliffs that turn every viewpoint into a mini discovery.</li>
-          <li>Local cafes, harbor markets, and handwritten notes left in the morning light.</li>
-          <li>Slow travel that focuses on memory, texture, and the feeling of being fully present.</li>
-        </ul>
+        <div class="feature-grid">
+          <div class="feature-photo large-photo">
+            <img src="images/pouring-coffee.jpeg" alt="Barista pouring coffee into a mug" />
+          </div>
+          <div class="feature-photo small-photo photo-stack">
+            <img src="images/coffee-beans.jpeg" alt="Close-up coffee beans" />
+          </div>
+          <div class="feature-photo small-photo photo-stack">
+            <img src="images/latte.jpeg" alt="Latte with foam art" />
+          </div>
+          <div class="feature-photo small-photo photo-stack">
+            <img src="images/coffee-shop.jpeg" alt="Coffee shop interior" />
+          </div>
+        </div>
       </section>
 
-      <section class="contact" id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Plan your next escape</h2>
-        <form action="#" method="post">
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Enter your name" />
-          </div>
+      <section class="why-us section-shell">
+        <div class="section-heading">
+          <p>What we offer</p>
+        </div>
+        <h2>Why visit us?</h2>
 
-          <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="name@example.com" />
-          </div>
+        <div class="icon-grid">
+          <article class="icon-card">
+            <img src="images/fair-trade.svg" alt="Fair trade icon" />
+            <h3>Fair Trade Coffee</h3>
+            <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
+          </article>
 
-          <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us what kind of trip you want..."></textarea>
-          </div>
+          <article class="icon-card">
+            <img src="images/local-baked-goods.svg" alt="Local baked goods icon" />
+            <h3>Local baked goods</h3>
+            <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+          </article>
 
-          <div class="form-group">
-            <label>Would you visit this coast again?</label>
-            <div class="radio-row" role="radiogroup" aria-label="Would you visit this coast again?">
-              <label><input type="radio" name="visit" value="yes" /> Yes</label>
-              <label><input type="radio" name="visit" value="no" /> No</label>
-              <label><input type="radio" name="visit" value="maybe" /> Maybe</label>
-            </div>
-          </div>
-
-          <button type="submit">Send</button>
-        </form>
+          <article class="icon-card">
+            <img src="images/made-with-love.svg" alt="Made with love icon" />
+            <h3>Made with love</h3>
+            <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day off right.</p>
+          </article>
+        </div>
       </section>
 
-      <footer class="site-footer" role="contentinfo">
-        &copy; Northshore Journal 2026
-      </footer>
+      <section class="menu-cta section-shell" id="menu">
+        <div class="cta-panel">
+          <div class="cta-copy">
+            <p>Our Menu</p>
+            <h2>Explore what we have to offer you</h2>
+          </div>
+          <a class="button button-dark" href="#locations">Explore our menu</a>
+        </div>
+      </section>
+
+      <section class="locations section-shell" id="locations">
+        <div class="loc-photo">
+          <img src="images/coffee-shop.jpeg" alt="Coffee shop interior with customers and counter" />
+        </div>
+
+        <div class="loc-copy">
+          <p class="mini-label">Locations</p>
+          <h2>Find your nearest coffee shop</h2>
+          <a class="button button-light-outline" href="#">View Locations</a>
+        </div>
+      </section>
+
+      <section class="story section-shell" aria-labelledby="story-title">
+        <div class="story-photo">
+          <img src="images/smiling-employee.jpeg" alt="Barista smiling while preparing a drink" />
+        </div>
+
+        <div class="story-copy">
+          <p class="mini-label">About us</p>
+          <h2 id="story-title">Read our story</h2>
+          <p>
+            In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.
+          </p>
+          <p>
+            My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.
+          </p>
+          <a class="button button-light-outline dark-outline" href="#">Learn more</a>
+        </div>
+      </section>
+
+      <section class="testimonials section-shell" aria-labelledby="testimonial-title">
+        <div class="section-heading testimonial-heading">
+          <p>Testimonials</p>
+        </div>
+        <h2 id="testimonial-title">What our customers say about us</h2>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <img src="images/testimonial-1.jpeg" alt="Customer enjoying coffee" />
+            <blockquote>
+              "I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."
+            </blockquote>
+            <p class="person">Jane D., Toronto</p>
+          </article>
+
+          <article class="testimonial-card">
+            <img src="images/testimonial-2.jpeg" alt="Customer smiling with a coffee cup" />
+            <blockquote>
+              "Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."
+            </blockquote>
+            <p class="person">Scott S., Ottawa</p>
+          </article>
+
+          <article class="testimonial-card">
+            <img src="images/testimonial-3.jpeg" alt="A smiling customer with a coffee cup" />
+            <blockquote>
+              "Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."
+            </blockquote>
+            <p class="person">Susie F., Ottawa</p>
+          </article>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <p>&copy; My Coffee Company 2024</p>
+    </footer>
   </body>
 </html>
